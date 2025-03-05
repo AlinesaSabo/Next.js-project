@@ -1,7 +1,7 @@
 'use client';
 
-import Button from '@/app/components/button';
 import React from 'react';
+import Button from '@/app/components/button';
 
 export interface ErrorComponentProps {
   error: Error;
@@ -12,7 +12,7 @@ export default function ErrorComponent({ error, reset }: ErrorComponentProps) {
   return (
     <div>
       <p>{`Something went wrong. ${error.message}`}</p>
-      <Button onClicl={() => reset()}>Try again</Button>
+      <Button onClick={() => reset()}>Try again</Button>
     </div>
   );
 }
